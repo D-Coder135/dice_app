@@ -57,8 +57,10 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
                 // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
                 onPressed: () {
+                  setState(() {
+                    rightDiceNumber = Random().nextInt(6) + 1;
+                  });
                   // print('Right button is pressed.');
-                  rightDiceNumber = Random().nextInt(6) + 1;
                 },
                 child: Image.asset('images/dice$rightDiceNumber.png')),
           ),
