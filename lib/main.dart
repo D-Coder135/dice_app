@@ -30,6 +30,7 @@ class DicePage extends StatelessWidget {
             // Alternative & more appropriate way is as follows -->
             // ignore: deprecated_member_use
             child: FlatButton(
+              // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
               onPressed: () {
                 print('Left button is pressed');
               }, // This is known as void callback. It is similar to anonymous functions in other programming language
