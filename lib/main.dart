@@ -19,21 +19,24 @@ class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Row(
-        children: [
-          Expanded(
-            // Expanded widget rearranges it child to occupy as much space as possible on the screen.
-            //  child: Image(
-            //   image: AssetImage('images/dice1.png'),
-            // ),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Row(
+          children: [
+            Expanded(
+              // Expanded widget rearranges it child to occupy as much space as possible on the screen.
+              //  child: Image(
+              //   image: AssetImage('images/dice1.png'),
+              // ),
 
-            // Alternative & more appropriate way is as follows -->
-            child: Image.asset('images/dice1.png'),
-          ),
-          Expanded(
-            child: Image.asset('images/dice1.png'),
-          ),
-        ],
+              // Alternative & more appropriate way is as follows -->
+              child: Image.asset('images/dice1.png'),
+            ),
+            Expanded(
+              child: Image.asset('images/dice1.png'),
+            ),
+          ],
+        ),
       ),
     );
   }
