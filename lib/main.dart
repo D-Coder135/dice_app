@@ -40,6 +40,7 @@ class _DicePageState extends State<DicePage> {
               // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
               onPressed: () {
                 setState(() {
+                  //The setState checks the occurrence of the changed part in further part of the code and redraws it on the screen.
                   leftDiceNumber = 2;
                 });
               }, // This is known as void callback. It is similar to anonymous functions in other programming language
