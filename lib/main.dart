@@ -41,7 +41,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 print('Left button is pressed');
               }, // This is known as void callback. It is similar to anonymous functions in other programming language
-              child: Image.asset('images/dice1.png'),
+              child: Image.asset('images/dice$leftDiceNumber.png'),
             ),
           ),
           // SizedBox(
