@@ -44,6 +44,7 @@ class _DicePageState extends State<DicePage> {
                 setState(() {
                   //The setState checks the occurrence of the changed part in further part of the code, changes it to the new value and redraws or recalls the build method.
                   leftDiceNumber = Random().nextInt(6) + 1;
+                  rightDiceNumber = Random().nextInt(6) + 1;
                 });
               }, // This is known as void callback. It is similar to anonymous functions in other programming language
               child: Image.asset('images/dice$leftDiceNumber.png'),
