@@ -22,9 +22,12 @@ class DicePage extends StatelessWidget {
       children: [
         Expanded(
           // Expanded widget rearranges it child to occupy as much space as possible on the screen.
-          child: Image(
-            image: AssetImage('images/dice1.png'),
-          ),
+          //  child: Image(
+          //   image: AssetImage('images/dice1.png'),
+          // ),
+
+          // Alternative & more appropriate way is as follows -->
+          child: Image.asset('images/dice1.png'),
         ),
       ],
     );
