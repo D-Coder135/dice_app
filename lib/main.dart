@@ -28,15 +28,12 @@ class DicePage extends StatelessWidget {
             // ),
 
             // Alternative & more appropriate way is as follows -->
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              // ignore: deprecated_member_use
-              child: FlatButton(
-                onPressed: () {
-                  print('Left button is pressed');
-                }, // This is known as void callback. It is similar to anonymous functions in other programming language
-                child: Image.asset('images/dice1.png'),
-              ),
+            // ignore: deprecated_member_use
+            child: FlatButton(
+              onPressed: () {
+                print('Left button is pressed');
+              }, // This is known as void callback. It is similar to anonymous functions in other programming language
+              child: Image.asset('images/dice1.png'),
             ),
           ),
           // SizedBox(
