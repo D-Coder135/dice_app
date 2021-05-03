@@ -73,6 +73,9 @@ class _DicePageState extends State<DicePage> {
   }
 }
 
+// When we want to build a non-responsive User Interface then a StatelessWidget is used or extended in a class.
+// But when we want to add some functionality to our UI then a StatefulWidget is used.
+
 // class DicePage extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
