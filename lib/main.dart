@@ -41,10 +41,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
               onPressed: () {
-                setState(() {
-                  //The setState checks the occurrence of the changed part in further part of the code, changes it to the new value and redraws or recalls the build method.
-                  getRandomDiceNumbers();
-                });
+                getRandomDiceFaces();
               }, // This is known as void callback. It is similar to anonymous functions in other programming language
               child: Image.asset('images/dice$leftDiceNumber.png'),
               // Using the variable inside the Image.asset() widget with the help of dollar($) sign is known as String Interpolation.
@@ -58,9 +55,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
               onPressed: () {
-                setState(() {
-                  getRandomDiceNumbers();
-                });
+                getRandomDiceFaces();
                 // print('Right button is pressed.');
               },
               child: Image.asset(
@@ -72,9 +67,12 @@ class _DicePageState extends State<DicePage> {
     );
   }
 
-  void getRandomDiceNumbers() {
-    leftDiceNumber = Random().nextInt(6) + 1;
-    rightDiceNumber = Random().nextInt(6) + 1;
+  void getRandomDiceFaces() {
+    setState(() {
+      //The setState checks the occurrence of the changed part in further part of the code, changes it to the new value and redraws or recalls the build method.
+      leftDiceNumber = Random().nextInt(6) + 1;
+      rightDiceNumber = Random().nextInt(6) + 1;
+    });
   }
 }
 
