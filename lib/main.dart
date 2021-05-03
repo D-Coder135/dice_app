@@ -47,6 +47,7 @@ class _DicePageState extends State<DicePage> {
                 });
               }, // This is known as void callback. It is similar to anonymous functions in other programming language
               child: Image.asset('images/dice$leftDiceNumber.png'),
+              // Using the variable inside the Image.asset() widget with the help of dollar($) sign is known as String Interpolation.
             ),
           ),
           // SizedBox(
@@ -55,14 +56,16 @@ class _DicePageState extends State<DicePage> {
           Expanded(
             // ignore: deprecated_member_use
             child: FlatButton(
-                // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
-                onPressed: () {
-                  setState(() {
-                    rightDiceNumber = Random().nextInt(6) + 1;
-                  });
-                  // print('Right button is pressed.');
-                },
-                child: Image.asset('images/dice$rightDiceNumber.png')),
+              // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
+              onPressed: () {
+                setState(() {
+                  rightDiceNumber = Random().nextInt(6) + 1;
+                });
+                // print('Right button is pressed.');
+              },
+              child: Image.asset(
+                  'images/dice$rightDiceNumber.png'), // Using the variable inside the Image.asset() widget with the help of dollar($) sign is known as String Interpolation.
+            ),
           ),
         ],
       ),
