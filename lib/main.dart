@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:math';
+
+import 'package:flutter/material.dart';
 
 void main() {
   return runApp(
@@ -24,6 +25,14 @@ class DicePage extends StatefulWidget {
 class _DicePageState extends State<DicePage> {
   int leftDiceNumber = 1;
   int rightDiceNumber = 1;
+
+  void getRandomDiceFaces() {
+    setState(() {
+      //The setState checks the occurrence of the changed part in further part of the code, changes it to the new value and redraws or recalls the build method.
+      leftDiceNumber = Random().nextInt(6) + 1;
+      rightDiceNumber = Random().nextInt(6) + 1;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,14 +74,6 @@ class _DicePageState extends State<DicePage> {
         ],
       ),
     );
-  }
-
-  void getRandomDiceFaces() {
-    setState(() {
-      //The setState checks the occurrence of the changed part in further part of the code, changes it to the new value and redraws or recalls the build method.
-      leftDiceNumber = Random().nextInt(6) + 1;
-      rightDiceNumber = Random().nextInt(6) + 1;
-    });
   }
 }
 
