@@ -30,7 +30,13 @@ class DicePage extends StatelessWidget {
             // Alternative & more appropriate way is as follows -->
             child: Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Image.asset('images/dice1.png'),
+              // ignore: deprecated_member_use
+              child: FlatButton(
+                onPressed: () {
+                  print('Left button is pressed');
+                },
+                child: Image.asset('images/dice1.png'),
+              ),
             ),
           ),
           // SizedBox(
