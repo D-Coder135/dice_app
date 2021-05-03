@@ -59,7 +59,7 @@ class _DicePageState extends State<DicePage> {
                 onPressed: () {
                   // print('Right button is pressed.');
                 },
-                child: Image.asset('images/dice1.png')),
+                child: Image.asset('images/dice$rightDiceNumber.png')),
           ),
         ],
       ),
