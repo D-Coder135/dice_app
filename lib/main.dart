@@ -32,9 +32,9 @@ class DicePage extends StatelessWidget {
               // Alternative & more appropriate way is as follows -->
               child: Image.asset('images/dice1.png'),
             ),
-            SizedBox(
-              width: 16.0,
-            ),
+            // SizedBox(
+            //   width: 16.0,
+            // ),
             Expanded(
               child: Image.asset('images/dice1.png'),
             ),
