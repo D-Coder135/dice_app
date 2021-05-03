@@ -43,6 +43,7 @@ class DicePage extends StatelessWidget {
           Expanded(
             // ignore: deprecated_member_use
             child: FlatButton(
+                // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
                 onPressed: () {
                   print('Right button is pressed.');
                 },
