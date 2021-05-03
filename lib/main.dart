@@ -57,7 +57,7 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
                 // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
                 onPressed: () {
-                  print('Right button is pressed.');
+                  // print('Right button is pressed.');
                 },
                 child: Image.asset('images/dice1.png')),
           ),
