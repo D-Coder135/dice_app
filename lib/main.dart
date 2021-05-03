@@ -18,6 +18,12 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row();
+    return Row(
+      children: [
+        Image(
+          image: AssetImage('images/dice1.png'),
+        ),
+      ],
+    );
   }
 }
