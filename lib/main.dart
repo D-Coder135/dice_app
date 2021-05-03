@@ -39,7 +39,9 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               // FlatButton widget comes already with padding therefore there is no need of adding extra padding.
               onPressed: () {
-                print('Left button is pressed');
+                setState(() {
+                  leftDiceNumber = 2;
+                });
               }, // This is known as void callback. It is similar to anonymous functions in other programming language
               child: Image.asset('images/dice$leftDiceNumber.png'),
             ),
