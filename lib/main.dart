@@ -9,6 +9,7 @@ void main() {
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text('Let\'s Role'),
+          // For adding an extra single quote sign(') use back slash(\) before it so that the compiler does not gets confused.
           backgroundColor: Colors.black54,
         ),
         body: DicePage(),
